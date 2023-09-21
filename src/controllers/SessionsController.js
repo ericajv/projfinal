@@ -16,6 +16,8 @@ class SessionsController {
       password,
       user.password,
     );
+
+
      if (!passwordMatched) {
       throw new AppError("E-mail e/ou senha incorreta.", 401);
     }
